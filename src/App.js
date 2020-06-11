@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
      <main>
+       <h1>Enter your location</h1>
        <Weather />
      </main>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const convertToFahrenheit = (temp) => {
-    (temp - 273.15).toFixed(0);
+    temp = (temp - 273.15).toFixed(0);
 }
 
 const fetchedData = (props) => {
@@ -9,7 +9,8 @@ const fetchedData = (props) => {
         <div>
             {props.responseObj.cod === 200 ?
             <div>
-                <p> In {props.responseObj.name}, it is currently {props.responseObj.main.temp}° Fahrenheit.</p>
+                <p> In {props.responseObj.name}, it is currently {props.responseObj.main.temp}°F.
+                Feels like: {props.responseObj.main.feels_like}°F</p>
             </div>
             : null}
         </div>
