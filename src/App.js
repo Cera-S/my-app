@@ -8,10 +8,10 @@ require('dotenv').config();
 function App() {
   return (
     <div className="App">
-     <main>
+     <body>
        <h1>Enter your location</h1>
        <Weather />
-     </main>
+     </body>
     </div>
   );
 }
