@@ -13,7 +13,7 @@ export const Forecast = () => {
     function getForecast(e)
     {
       e.preventDefault();
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_APP_API_KEY}`)
+      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_APP_API_KEY}&units=imperial`)
         .then(response => response.json())
         .then (response => {
           setResponseObj(response)
@@ -27,14 +27,15 @@ export const Forecast = () => {
           <form onSubmit={getForecast}>
             <input
               type="text"
-              placeholder="City Name"
+              placeholder="..."
               value={cityName}
               onChange={(e) => setCityName(e.target.value)}
             />
-            <button type="submit"> Get Forecast</button>
+            <button type="submit">
+              submit
+            </button>
             <Data responseObj={responseObj}/>
           </form>
-
         </div>
     )
   }

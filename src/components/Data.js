@@ -1,9 +1,5 @@
 import React from 'react';
 
-const convertToFahrenheit = (temp) => {
-    temp = (temp - 273.15).toFixed(0);
-}
-
 const fetchedData = (props) => {
     return (
         <div>
