@@ -1,6 +1,6 @@
 {
-  "homepage": "http://Cera-S.github.io/my-app",
-  "name": "my-app",
+  "homepage": "http://Cera-S.github.io/weather",
+  "name": "weather",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
