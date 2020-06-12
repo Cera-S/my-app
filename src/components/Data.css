@@ -1,0 +1,15 @@
+.temperature {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.weather {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+}

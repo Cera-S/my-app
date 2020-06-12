@@ -7,12 +7,12 @@ require('dotenv').config();
 
 function App() {
   return (
-    <div className="App">
-     <body>
-       <h1>Enter your city</h1>
-       <Weather />
-     </body>
-    </div>
+    <body>
+      <div className="App">
+        <h1>Enter your city</h1>
+        <Weather />
+      </div>
+    </body>
   );
 }
 

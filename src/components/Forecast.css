@@ -1,7 +1,27 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     font-family: 'Roboto', sans-serif;
-    color: gray;
-    font-size: 11px;
+    color: white;
+    font-size: 18px;
     letter-spacing: 1.4px;
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.4px;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
 }

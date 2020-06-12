@@ -1,16 +1,21 @@
 import React from 'react';
+import './Data.css';
 
-const fetchedData = (props) => {
+const Data = (props) => {
     return (
         <div>
             {props.responseObj.cod === 200 ?
-            <div>
-                <p> In {props.responseObj.name}, it is currently {props.responseObj.main.temp}°F.
-                Feels like: {props.responseObj.main.feels_like}°F</p>
-            </div>
+                <div className="temperature">
+                    <p> In {props.responseObj.name}, it is currently {Math.round(props.responseObj.main.temp)}°F.</p>
+                    <div className="weather">
+                        <p><img src={`http://openweathermap.org/img/w/${props.responseObj.weather[0].icon}.png`}
+                            alt="{props.response.Obj.weather[0].icon}"/></p>
+                        <p>{props.responseObj.weather[0].description}</p>
+                    </div>
+                </div>
             : null}
-        </div>
+            </div>
     )
 }
 
-export default fetchedData;
+export default Data;
