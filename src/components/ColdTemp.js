@@ -22,7 +22,7 @@ class ColdTemp extends Component {
             <div className= {isBackgroundNormal ? 'background-normal' : 'background-cold'}>
                 <div className="loading-data">
                     {this.state.loading 
-                    ? <p>loading recommendations for indoor spots...</p>
+                    ? <p>.</p>
                     : <div>
                     </div> }
                 </div>

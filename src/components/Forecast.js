@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import Data from './Data';
-import ColdTemp from './ColdTemp';
 import './Forecast.css'
 import SearchIcon from '@material-ui/icons/Search';
 
