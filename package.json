@@ -1,6 +1,6 @@
 {
-  "name": "weather",
   "homepage": "https://cera-s.github.io/weather/",
+  "name": "weather",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
