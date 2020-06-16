@@ -15,7 +15,7 @@ export const Forecast = () => {
     {
       e.preventDefault();
 
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_APP_API_KEY}&units=imperial`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${process.env.REACT_APP_API_KEY}&units=imperial`)
         .then(response => response.json())
         .then (response => {
           setResponseObj(response)
