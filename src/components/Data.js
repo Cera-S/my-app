@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Data.css';
 import WarmTemp from './WarmTemp';
 import ColdTemp from './ColdTemp';
+import Mapbox from './Mapbox';
 
 const Data = (props) => {
+    let [responseObj] = useState({});
+
     return (
         <div>
             {props.responseObj.cod === 200 ?
@@ -26,6 +29,11 @@ const Data = (props) => {
                         </p>
                     }
                 </div>
+
+                <div className="map">
+                    <Mapbox responseObj={responseObj} />
+                </div>
+
             </div>
             : null}
         </div>
