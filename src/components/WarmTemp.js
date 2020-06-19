@@ -14,15 +14,9 @@ class WarmTemp extends Component {
 
 
     render () {
-        const isBackgroundNormal = true;
         return (
-            <div className={isBackgroundNormal ? 'background-hot' : null}>
-                <div className="loading-data">
-                    {this.state.loading 
-                    ? <p>.</p>
-                    : <div>
-                    </div> }
-                </div>
+            <div>
+                <p>It's warm outside.</p>
             </div>
         )
     }

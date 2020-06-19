@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <h1>Enter your city</h1>
         <Weather />
-      </div>
+        </div>
     </body>
   );
 }

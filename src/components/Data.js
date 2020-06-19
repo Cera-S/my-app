@@ -20,18 +20,18 @@ const Data = (props) => {
 
                 <div className="conditions">
                     {props.responseObj.main.temp >= 70 ? 
-                        <p>It's warm outside.
+                        <p>
                             <WarmTemp />
                         </p>
                     :
                         <p>It's cold outside. 
-                            <ColdTemp />
+                            {/* <ColdTemp /> */}
                         </p>
                     }
                 </div>
 
                 <div className="map">
-                    <Mapbox responseObj={responseObj} />
+                    <Mapbox responseObj={responseObj} lat={props.responseObj.lat} lon={props.responseObj.lon} />
                 </div>
 
             </div>
