@@ -4,14 +4,13 @@ import Weather from './components/Weather';
 
 require('dotenv').config();
 
-
 function App() {
   return (
     <body>
       <div className="App">
         <h1>Enter your city</h1>
         <Weather />
-        </div>
+      </div>
     </body>
   );
 }

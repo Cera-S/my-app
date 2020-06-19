@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './Temp.css'
 
 class WarmTemp extends Component {
     state = {
@@ -15,8 +14,9 @@ class WarmTemp extends Component {
 
     render () {
         return (
-            <div>
-                <p>It's warm outside.</p>
+            <div className="warm">
+                <p>It's warm outside.
+                Would you like recomnendations for outdoor spots?</p>
             </div>
         )
     }

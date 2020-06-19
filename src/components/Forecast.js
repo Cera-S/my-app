@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Data from './Data';
 import './Forecast.css'
+import Yelp from './Yelp';
 import SearchIcon from '@material-ui/icons/Search';
 
 require('dotenv').config();
@@ -37,6 +38,7 @@ export const Forecast = () => {
               <SearchIcon />
             </button>
             <Data responseObj={responseObj}/>
+            <Yelp cityName={cityName} />
           </form>
         </div>
     )

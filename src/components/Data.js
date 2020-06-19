@@ -1,12 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Data.css';
 import WarmTemp from './WarmTemp';
 import ColdTemp from './ColdTemp';
 import Mapbox from './Mapbox';
 
 const Data = (props) => {
-    let [responseObj] = useState({});
-
     return (
         <div>
             {props.responseObj.cod === 200 ?
@@ -24,14 +22,14 @@ const Data = (props) => {
                             <WarmTemp />
                         </p>
                     :
-                        <p>It's cold outside. 
-                            {/* <ColdTemp /> */}
+                        <p>
+                            <ColdTemp />
                         </p>
                     }
                 </div>
 
                 <div className="map">
-                    <Mapbox responseObj={responseObj} lat={props.responseObj.lat} lon={props.responseObj.lon} />
+                    <Mapbox responseObj={props.responseObj} lat={props.responseObj.lat} lon={props.responseObj.lon} />
                 </div>
 
             </div>
