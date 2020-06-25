@@ -3,6 +3,7 @@ import './Data.css';
 import WarmTemp from './WarmTemp';
 import ColdTemp from './ColdTemp';
 import Mapbox from './Mapbox';
+import Collapsible from './Collapsible';
 
 const Data = (props) => {
     return (
@@ -10,12 +11,7 @@ const Data = (props) => {
             {props.responseObj.cod === 200 ?
             <div className="temperature">
                     <p> In {props.responseObj.name}, it is currently {Math.round(props.responseObj.main.temp)}°F.</p>
-                    <div className="weather">
-                        <p><img src={`https://openweathermap.org/img/w/${props.responseObj.weather[0].icon}.png`}
-                            alt="{props.response.Obj.weather[0].icon}"/></p>
-                        <p>{props.responseObj.weather[0].description}</p>
-                    </div>
-
+                    <Collapsible responseObj={props.responseObj} />
                 <div className="conditions">
                     {props.responseObj.main.temp >= 70 ? 
                         <p>
