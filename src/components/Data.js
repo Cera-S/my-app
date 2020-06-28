@@ -11,7 +11,7 @@ const Data = (props) => {
             {props.responseObj.cod === 200 ?
             <div className="temperature">
                     <p> In {props.responseObj.name}, it is currently {Math.round(props.responseObj.main.temp)}°F.</p>
-                    <Collapsible responseObj={props.responseObj} />
+                <Collapsible responseObj={props.responseObj} />
                 <div className="conditions">
                     {props.responseObj.main.temp >= 70 ? 
                         <p>
