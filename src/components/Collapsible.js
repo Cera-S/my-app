@@ -29,7 +29,7 @@ const Collapsible = (props) => {
                   <p> Feels like: {props.responseObj.main.feels_like}°F </p>
                   <p> High: {props.responseObj.main.temp_max}°F</p>
                   <p> Low: {props.responseObj.main.temp_min}°F</p>
-                  <p> Humidity: {props.responseObj.main.humidity}°F </p>
+                  <p> Humidity: {props.responseObj.main.humidity}% </p>
                 </div>
                 </Col>
                 </Row>
