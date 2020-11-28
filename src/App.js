@@ -8,7 +8,7 @@ function App() {
   return (
     <body>
       <div className="App">
-        <h1>Enter your city</h1>
+        <h1>{"\n"}Enter your city</h1>
         <Weather />
       </div>
     </body>
