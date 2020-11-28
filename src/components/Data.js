@@ -25,6 +25,7 @@ const Data = (props) => {
                 </div>
 
                 <div className="map">
+                    <p>Location on map to be updated</p>
                     <Mapbox responseObj={props.responseObj} lat={props.responseObj.lat} lon={props.responseObj.lon} />
                 </div>
 

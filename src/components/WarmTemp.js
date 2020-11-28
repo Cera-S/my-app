@@ -15,7 +15,7 @@ class WarmTemp extends Component {
     render () {
         return (
             <div className="warm">
-                <p>It's warm outside.</p>
+                <p><b>It's warm outside.</b></p>
             </div>
         )
     }
